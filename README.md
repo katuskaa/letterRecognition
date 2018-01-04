@@ -5,54 +5,54 @@ Usage of class LetterRecognition:
 
 <code>
 letterRecognition = LetterRecognition("files/data.csv", 0.75)
-<code>
-
+</code>
+ 
 First parameter is file containing input data. Second parameter is optional, determines ratio between training and testing data set, default is 0.75.
 
 <code>
 letterRecognition.showPCATrainGraph()
-<code>
+</code>
 
 Using PCA method to reduce dimensions. Shows graph displaying two main compomnents of training set.
 
 <code>
 letterRecognition.showPCATestGraph()
-<code>
+</code>
 
 Using PCA method to reduce dimensions. Shows graph displaying two main compomnents of testing set.
  
 <code>
 svc = letterRecognition.supportVectorClassifier()
-<code>
+</code>
 
 Returns trained Support Vector Classifier.
 
 <code>
 rfc = letterRecognition.randomForestClassifier()
-<code>
+</code>
 
 Returns trained Random Forest Classifier.
 
 <code>
 dtc = letterRecognition.decisionTreeClassifier()
-<code>
+</code>
 
 Returns trained Decision Tree Classifier.
 
 <code>
 logisticRegression = letterRecognition.logisticRegression()
-<code>
+</code>
 
 Returns trained Logistic Regression.
 
 <code>
 letterRecognition.showROCGraph(svc, "SVC")
-<code>
+</code>
 
 Shows graph of all ROC classes in one graph for Support Vector Classifier.
 
 <code>
 letterRecognition.showROCGraph(logisticRegression, "Logistic Regression")
-<code>
+</code>
 
 Shows graph of all ROC classes in one graph for Logistic Regression.
