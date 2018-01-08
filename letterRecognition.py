@@ -12,7 +12,6 @@ from sklearn import tree
 from sklearn.metrics import roc_curve, auc
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.preprocessing import label_binarize
-import time
 
 
 class Visualisation:
